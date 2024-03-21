@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { ProjectGenericProps } from '../utils/Content';
-import { AppConfig } from '../utils/AppConfig';
 
 type ProjectCard = {
   project: ProjectGenericProps;
@@ -24,7 +23,6 @@ const ProjectCard = (props: ProjectCard) =>  (
             </a>
           </h3>
           <p className="text-sm p-5">{props.project.description}</p>
-          <p className="text-l dollars text-right font-medium text-gray-900">$ {Number(props.project.price).toLocaleString(AppConfig.locale)}</p>
         </div>
       </div>
     </div>

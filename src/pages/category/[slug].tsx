@@ -58,7 +58,6 @@ export const getStaticProps: GetStaticProps = async (context: any) => {
     'name',
     'description',
     'category',
-    'price',
     'image',
     'href',
     'content',

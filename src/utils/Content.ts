@@ -40,7 +40,7 @@ export function getProjectBySlug(slug: string, fields: string[] = []) {
   const fullPath = join(projectsDirectory, `${realSlug}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = matter(fileContents);
-  const items: ProjectGenericProps = { }; // name: '', slug: '', category: '',  description: '', image: '', price: 0, tags: [], href: ''  , content: '' 
+  const items: ProjectGenericProps = { }; // name: '', slug: '', category: '',  description: '', image: '',  tags: [], href: ''  , content: '' 
 
   // Ensure only the minimal needed data is exposed
   fields.forEach((field) => {

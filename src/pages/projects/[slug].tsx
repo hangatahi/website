@@ -108,12 +108,9 @@ export const getStaticProps = async (context: any) => {
     'name',
     'description',
     'category',
-    'price',
     'image',
     'content',
     'tags',
-    'sizes',
-    'colors',
     'slug',
   ]);
   const content = await markdownToHtml(project.content || '');
@@ -124,10 +121,7 @@ export const getStaticProps = async (context: any) => {
       name: project.name,
       description: project.description,
       category: project.category,
-      price: project.price,
       image: project.image,
-      colors: project.colors || [],
-      sizes: project.sizes || [],
       tags: project.tags || [],
       content,
     },
