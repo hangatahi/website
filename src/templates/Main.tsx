@@ -8,7 +8,7 @@ type IMainProps = {
   children: ReactNode;
 };
 
-const categories = AppConfig.categories;
+//const categories = AppConfig.categories;
 const Main = (props: IMainProps) => (
   <div className="antialiased w-full text-gray-700 px-3 md:px-0">
     {props.meta}
