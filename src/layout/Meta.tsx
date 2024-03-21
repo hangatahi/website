@@ -16,7 +16,7 @@ type IMetaProps = {
 
 const Meta = (props: IMetaProps) => {
   const router = useRouter();
-
+  router.basePath = 'website';
   return (
     <>
       <Script
